@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 20px;
+ 
+}
+
+header img{
+    width: 120px;
+}
+#head-img2{
+    border-radius: 50%;
+    width: 40px;
+}
+.user-post{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.user-post img{
+    width: 50px;
+    border-radius: 50%;
+}
+.user-post h1,
+ .user-post p{
+    margin: 5px 0px;
+}
+.user-post h1{
+    font-size: 17px;
+}
+.user-post p{
+    font-size: 12px;
+}
+
+.post img{
+    max-width: 100%;
+}
+.icons img{
+    width: 30px;
+}
+.icons{
+    margin: 10px 0px 0px 10px;
+}
+.icons img{
+    margin: 0px 5px 0px 0px;
+}
+.icons h3{
+    margin: 5px 0px 0px 0px;
+    font-size: 15px;
+}
+
+.hov:hover{
+    width: 35px;
+}
+
+#user-message{
+    font-size: 15px;
+}
+#user{
+    margin: 0px 5px 0px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
