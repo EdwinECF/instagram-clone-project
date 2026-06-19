@@ -27,4 +27,41 @@ const posts = [
         likes: 152
     }
 ]
+let postUserImg = document.getElementById('post-user-img')
+let postUser = document.getElementById('post-user')
+let postlocation = document.getElementById('post-add')
+let postImg = document.getElementById('postimg')
+let like = document.getElementById('like')
+let comments = document.getElementById('comments')
+let dm = document.getElementById('dm')
+let likeNum = document.getElementById('like-num')
+let userName = document.getElementById('user')
+let userMessage = document.getElementById('user-message')
+let postNum = 1;
+
+like.addEventListener('click', function(){
+    let currNum = parseInt(likeNum.textContent)
+    currNum += 1
+    likeNum.textContent = `${currNum} likes`
+})
+
+postUserImg.addEventListener('click', function(){
+    if(postNum < 2){
+        postNum += 1;
+        renderPost(postNum)
+    }else{
+        postNum = 0;
+        renderPost(postNum)
+    }
+})
+
+function renderPost(postNum){
+    postUserImg.src = posts[postNum].avatar
+    postUser.textContent = posts[postNum].name
+    postlocation.textContent = posts[postNum].location
+    userName.textContent = posts[postNum].username
+    postImg.src = posts[postNum].post
+    userMessage.textContent = posts[postNum].comment
+    likeNum.textContent = posts[postNum].likes
+}
 
